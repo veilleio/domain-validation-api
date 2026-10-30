@@ -66,7 +66,7 @@ response = requests.get(
     "https://api.veille.io/v1/intelligence/domain",
     headers=HEADERS,
     params={
-        "query": "YOUR_VALUE",
+        "query": "tempmail.org",
     },
     timeout=120,
 )
@@ -114,7 +114,7 @@ type DomainValidationApi = {
 const headers = { "x-api-key": process.env.VEILLE_API_KEY!, "Content-Type": "application/json" };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "tempmail.org",
 });
 
 const response = await fetch(`https://api.veille.io/v1/intelligence/domain?${params}`, { headers });

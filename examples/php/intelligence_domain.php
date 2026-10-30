@@ -27,7 +27,7 @@ function call(string $method, string $url, ?string $body = null): string
 }
 
 $query = http_build_query([
-    'query' => 'YOUR_VALUE'
+    'query' => 'tempmail.org'
 ]);
 $response = call('GET', 'https://api.veille.io/v1/intelligence/domain' . ($query ? '?' . $query : ''));
 

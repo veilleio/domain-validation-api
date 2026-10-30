@@ -42,7 +42,7 @@ func main() {
 	_ = url.Values{}
 	_ = json.Valid
 	params := url.Values{}
-	params.Set("query", "YOUR_VALUE")
+	params.Set("query", "tempmail.org")
 	target := "https://api.veille.io/v1/intelligence/domain"
 	if len(params) > 0 {
 		target += "?" + params.Encode()

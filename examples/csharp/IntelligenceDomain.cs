@@ -7,7 +7,7 @@ var apiKey = Environment.GetEnvironmentVariable("VEILLE_API_KEY") ?? throw new I
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(120) };
 http.DefaultRequestHeaders.Add("x-api-key", apiKey);
 
-var query = "query=" + Uri.EscapeDataString("YOUR_VALUE");
+var query = "query=" + Uri.EscapeDataString("tempmail.org");
 var response = await http.GetAsync("https://api.veille.io/v1/intelligence/domain" + (query.Length > 0 ? "?" + query : ""));
 if (!response.IsSuccessStatusCode)
 {
